@@ -1,19 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 
 
 :root {
-    --bgColor: whitesmoke;
+    --bgColor: rgb(54, 54, 54);
     --textColor: rgb(22, 22, 22);
-    --mainFont: 'Oswald';
+    --mainFont: 'Barlow';
 }
 html {
     box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--bgColor);
     color: var(--textColor);
     font-family: var(--mainFont), Courier, monospace;
+}
+
+
+.button-container {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 180px;
+    border-radius: 7px;
+    height: 65px;
+    font-family: 'Barlow', Courier, monospace;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 0 2px 5px black;
+    color: whitesmoke;
+    background: linear-gradient(to top, rgb(78, 78, 78), rgb(119, 119, 119));
+}
+
+button:hover {
+    background: linear-gradient(to top,  rgb(119, 119, 119), rgb(78, 78, 78));
+}
+
+button:active {
+    transform: translateY(3px);
 }
